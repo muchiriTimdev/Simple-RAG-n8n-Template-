@@ -26,3 +26,54 @@ This n8n template includes a basic RAG setup with the following stages:
 
 ## 📂 File Structure
 
+
+---
+
+## 📥 How to Import
+
+1. Open your n8n instance.
+2. Go to **Workflows > Import from File**.
+3. Upload the `rag-workflow.json` file.
+4. Review the nodes, update credentials (OpenAI API key, DB connection, etc.)
+5. Click **Activate** to start using the workflow.
+
+---
+
+## ⚙️ Requirements
+
+- **n8n instance** (cloud or self-hosted)
+- **API key for LLM provider** (OpenAI, Cohere, etc.)
+- **Vector DB or retrieval source** (Pinecone, Qdrant, Supabase, etc.)
+- Optional: Slack Webhook, Notion API, or front-end trigger integration
+
+---
+
+## 🧪 Testing
+
+You can test the workflow manually:
+- Trigger the workflow manually
+- Input a sample question (e.g. "What are the latest features in GPT-4?")
+- Verify the retrieved context and generated answer in the output
+
+---
+
+## 🛠 Customization Tips
+
+- Add **authentication layer** if used in production
+- Swap **OpenAI** with **Claude, Gemini, or Mistral** depending on your LLM provider
+- Add **error handling nodes** for failed API calls
+- Log interactions to **Postgres, Notion, or Airtable** for later analysis
+
+---
+
+## 📄 License
+
+This workflow template is provided for educational and prototyping purposes under the [MIT License](./LICENSE).
+
+---
+
+## 🙋 Need Help?
+
+If you run into issues or want to extend this RAG pipeline further, feel free to open an issue or contact the maintainer.
+
+Happy automating! ⚡
